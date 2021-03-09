@@ -6,8 +6,6 @@ const generateMarkdown = require("./utils/generateMarkdown");
 // array of questions for user
 const questions = [
     // WHEN I am prompted for information about my application repository
-
-
     // WHEN I enter my project title
     {
         type: "input",
@@ -62,9 +60,7 @@ const questions = [
         message: "What does the user need to know about contributing to the repo?",
     }
 ];
-
 // function to write README file
-
 function writeToFile(fileName, data) {
     return fs.writeFileSync(path.join(process.cwd(), fileName), data);
   }
